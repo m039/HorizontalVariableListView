@@ -1526,7 +1526,7 @@ public abstract class AbsHListView extends AdapterView<ListAdapter> implements V
 
 		if ( mCheckStates != null ) {
 			try {
-				ss.checkState = mCheckStates.clone();
+				// error ! ss.checkState = mCheckStates.clone();
 			} catch( NoSuchMethodError e ) {
 				e.printStackTrace();
 				ss.checkState = new SparseArrayCompat<Boolean>();
